@@ -1,0 +1,8 @@
+.env
+
+# node / next
+node_modules/
+frontend/node_modules/
+.next/
+out/
+dist/
