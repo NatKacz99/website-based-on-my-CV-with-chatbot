@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { DigitalTwinChat } from "./components/DigitalTwinChat";
+import { GitHubIcon, LinkedInIcon } from "./components/Icons";
 
 export default function Home() {
     return (
@@ -218,14 +219,39 @@ export default function Home() {
                                 natalia.kaczynska.programista@gmail.com
                             </div>
                         </div>
-                        <div className="text-xs text-gray-500 space-y-1">
-                            <p>
-                                Linkedin: <a href="https://www.linkedin.com/in/natalia-kaczy%C5%84ska-9673173a3/">https://www.linkedin.com/in/natalia-kaczy%C5%84ska-9673173a3/</a>
-                                <br />
-                                GitHub: <a href="https://github.com/NatKacz99">https://github.com/NatKacz99</a>
-                                <br />
-                                Website www: <a href="https://natalia-kaczynska.profesjonalnyprogramista.pl/en"> https://natalia-kaczynska.profesjonalnyprogramista.pl/en</a>
-                            </p>
+                        <div className="text-xs text-gray-500 space-y-2">
+                            <div className="flex items-center gap-2">
+                                <LinkedInIcon className="h-4 w-4 text-sky-400" />
+                                  <p>Linkedin: </p>
+                                <a
+                                    href="https://www.linkedin.com/in/natalia-kaczy%C5%84ska-9673173a3/"
+                                    className="hover:text-gray-200 transition-colors"
+                                >
+                                    https://www.linkedin.com/in/natalia-kaczy%C5%84ska-9673173a3/
+                                </a>
+                            </div>
+
+                            <div className="flex items-center gap-2">
+                                <GitHubIcon className="h-4 w-4 text-gray-300" />
+                                  <p>GitHub: </p>
+                                <a
+                                    href="https://github.com/NatKacz99"
+                                    className="hover:text-gray-200 transition-colors"
+                                >
+                                    https://github.com/NatKacz99
+                                </a>
+                            </div>
+
+                            <div className="flex items-center gap-2">
+                                <span className="h-4 w-4 rounded-full border border-white/30" />
+                                <p>Website: </p>
+                                <a
+                                    href="https://natalia-kaczynska.profesjonalnyprogramista.pl/en"
+                                    className="hover:text-gray-200 transition-colors"
+                                >
+                                    https://natalia-kaczynska.profesjonalnyprogramista.pl/en
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </section>
